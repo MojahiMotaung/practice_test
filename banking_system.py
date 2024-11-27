@@ -19,7 +19,7 @@ def transfer(from_account: dict, to_account: dict, amount: float) -> None:
 # Function to add a new account to the system
 def add_account(accounts: dict, owner: str, initial_balance: float) -> None:
     if owner not in accounts:
-        accounts[owner] = initial_balance
+        accounts[owner] = {'balance': initial_balance}
 
 # Function to find an account by owner's name
 def find_account(accounts: dict, owner: str) -> dict:
