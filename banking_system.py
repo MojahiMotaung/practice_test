@@ -23,7 +23,7 @@ def add_account(accounts: dict, owner: str, initial_balance: float) -> None:
 
 # Function to find an account by owner's name
 def find_account(accounts: dict, owner: str) -> dict:
-    pass
+    return accounts[owner] if owner in accounts else None
 
 # Function to display all accounts in the system
 def display_all_accounts(accounts: dict) -> str:
